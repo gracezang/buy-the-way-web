@@ -1,0 +1,115 @@
+#addCheese{
+    z-index: 5;
+    position:absolute;
+    top:227px;
+    left:100px;
+    width:15px;
+    height:15px;
+}
+
+#minusCheese{
+  z-index:5;
+  position:absolute;
+  top:227px;
+  left:25px;
+  width:15px;
+  height:15px;
+}
+
+#quantityCheese{
+    margin:0px;
+    font-size:20;
+  z-index:5;
+  position:absolute;
+  top:227px;
+  left:72px;
+}
+
+#addCheeseToCart{
+  z-index:5;
+  position:absolute;
+  top:200px;
+  left:130px;
+  width:50px;
+  height:50px;
+  display:block;
+}
+
+#CheeseAdded{
+    z-index:6;
+  position:absolute;
+  top:200px;
+  left:130px;
+  width:35px;
+  height:35px;
+  display:none;
+}
+
+#addMilk{
+    z-index: 5;
+    position:absolute;
+    top:227px;
+    left:285px;
+    width:15px;
+    height:15px;
+}
+
+#minusMilk{
+  z-index:5;
+  position:absolute;
+  top:227px;
+  left:210px;
+  width:15px;
+  height:15px;
+}
+
+#quantityMilk{
+    margin:0px;
+    font-size:20;
+  z-index:5;
+  position:absolute;
+  top:227px;
+  left:257px;
+}
+
+#addMilkToCart{
+  z-index:5;
+  position:absolute;
+  top:200px;
+  left:305px;
+  width:50px;
+  height:50px;
+  display:block;
+}
+
+#MilkAdded{
+    z-index:6;
+  position:absolute;
+  top:200px;
+  left:305px;
+  width:35px;
+  height:35px;
+  display:none;
+}
+
+.fill{
+    width:30px;
+    height:30px;
+    z-index:5;
+}
+
+#cheese{
+  position:absolute;
+  top:140px;
+  left:63px;
+  font-weight: 900;
+  z-index:5;
+}
+
+#milk{
+  position:absolute;
+  top:140px;
+  right: 95px;
+  font-weight: 900;
+  z-index:5;
+}

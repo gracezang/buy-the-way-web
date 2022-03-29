@@ -1,0 +1,56 @@
+
+
+#addTurkey{
+    border:1px solid black;
+    z-index: 5;
+    position:absolute;
+    top:285px;
+    left:25px;
+    width:15px;
+    height:15px;
+}
+
+#minusTurkey{
+    border:1px solid black;
+  z-index:5;
+  position:absolute;
+  top:285px;
+  left:100px;
+  width:15px;
+  height:15px;
+}
+
+#quantityTurkey{
+    margin:0px;
+    font-size:15;
+  z-index:5;
+  position:absolute;
+  top:285px;
+  left:65px;
+}
+
+#addTurkeyToCart{
+  z-index:5;
+  position:absolute;
+  top:285px;
+  left:140px;
+  width:25px;
+  height:25px;
+  display:block;
+}
+
+#TurkeyAdded{
+    z-index:6;
+  position:absolute;
+  top:285px;
+  left:140px;
+  width:25px;
+  height:25px;
+  display:none;
+}
+
+.fill{
+    width:15px;
+    height:15px;
+    z-index:5;
+}

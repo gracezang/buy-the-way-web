@@ -1,0 +1,140 @@
+<html>
+
+<head>
+  <title>Buy the Way | Navigation</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Hanbo Yu" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/interaction.js"></script>
+  <style>
+    /* Set the size of the div element that contains the map */
+    #map {
+      height: 250px;
+      /* The height is 400 pixels */
+      width: 100%;
+      /* The width is the width of the web page */
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <a href="route.html"><img id="leftArrow" src="img/leftArrow.jpg"></a>
+    <p>&nbsp;Destination</p>
+  </div>
+  <div class="Navigation">
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <!-- <script src="http://maps.googleapis.com/maps/api/js?libraries=geometry&sensor=false"></script> -->
+    <script>
+      function getParams(key) {
+        var reg = new RegExp("(^|&)" + key + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+          return unescape(r[2]);
+        }
+        return null;
+      };
+
+      var param = getParams("route");
+      var parse = param.split(",");
+      console.log(parse);
+      function nav(x) {
+        var loc_div = document.getElementById('Location');
+        var container = document.createElement("div");
+        var p = document.createElement("p");
+        var a = document.createElement("a");
+        p.textContent = "To " + parse[x] +":";
+        a.className = "mapButton";
+        a.textContent = "Open on Googlemap";
+        a.style.cssText = "margin-left:27%;border: rgba(52, 152, 219, 1) 2px solid; border-radius:15px;background-color:rgba(52, 152, 219, 1);text-decoration: none;color:white;font-size:15;";
+        a.href = "http://maps.google.com/maps/dir/current+location/" + parse[x] + ",+Kingston";
+        container.id = parse[x];
+        container.appendChild(p);
+        container.appendChild(a);
+        loc_div.appendChild(container);
+      }
+      // Initialize and add the map
+      function initMap() {
+        // The locations
+        var markets = [
+          ['Metro', 44.2323852, -76.491888],
+          ['FoodBasic', 44.2334771,-76.480701],
+          ['Costco', 44.2601738, -76.5603943],
+          ['GlobalPetFood', 44.2448608, -76.5185738],
+          ['PetValu', 44.2419248, -76.5156555],
+          ['Dollarama', 44.2318787, -76.485203],
+          ['CanadianTire', 44.2415275, -76.5140443],
+          ['CanadaComputer', 44.232621, -76.4903916]]
+        var kcenter = { lat: 44.241115, lng: -76.519164 };
+
+        var map = new google.maps.Map(
+          document.getElementById('map'), { zoom: 11, center: kcenter });
+        for (var x = 0; x < parse.length; x++) {
+          nav(x);
+          var index;
+          switch (parse[x]) {
+            case "Metro":
+              index = 0;
+              break;
+            case "FoodBasic":
+              index = 1;
+              break;
+            case "Costco":
+              index = 2;
+              break;
+            case "GlobalPetFood":
+              index = 3;
+              break;
+            case "PetValu":
+              index = 4;
+              break;
+            case "Dollarama":
+              index = 5;
+              break;
+            case "CanadianTire":
+              index = 6;
+              break;
+            case "CanadaComputer":
+              index = 7;
+              break;
+          }
+          var marker = [new google.maps.Marker({ position: new google.maps.LatLng(markets[index][1], markets[index][2]), map: map })];
+          marker.forEach(function (marker) {
+            marker.addListener('click', function () {
+              map.setZoom(15);
+              map.setCenter(marker.getPosition());
+            });
+          });
+        }
+
+      }
+        // var marker_1 = new google.maps.Marker({ position: Metro, map: map });
+        // var marker2 = new google.maps.Marker({ position: fbasic, map: map });  
+
+      //   marker1.addListener('click', function () {
+      //     map.setZoom(15);
+      //     map.setCenter(marker1.getPosition());
+      //   });
+      //   marker2.addListener('click', function () {
+      //     map.setZoom(15);
+      //     map.setCenter(marker2.getPosition());
+      //   });
+      // }
+    </script>
+    <!--Load the API from the specified URL
+            * The async attribute allows the browser to render the page while the API loads
+            * The key parameter will contain your own API key (which is not needed for this tutorial)
+            * The callback parameter executes the initMap() function
+            -->
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGX244w754IR0tJ2ajgCYoQV7ArziRRB8&callback=initMap">
+      </script>
+    <div id="Location">
+    </div>
+  </div>
+  <button id="back" type="button" onclick="emptyList()">Clear and Back to Main Page</button>
+</body>
+
+</html>

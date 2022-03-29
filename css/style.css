@@ -1,0 +1,440 @@
+#mainPage {
+    width: 34px;
+    height: 30px;
+    border-radius: 20px;
+    background: #fea085;
+  }
+
+#searchBox{
+    border-radius: 18px;
+}
+
+input[type=submit]{
+    
+    border-radius: 18px;
+}
+
+#back{
+    border-radius: 18px;
+}
+
+body {
+    font-family: Open Sans, Lucida Grande, Lucida Sans Unicode, Helvetica Neue, Arial, sans-serif;
+    }
+
+p{
+    color:rgba (255,255,255, .5);
+}
+
+#listIcon{
+    display:"block";
+}
+
+#sun, #pen{
+    width:20px;
+    height:20px;
+}
+
+#plus{
+    position:absolute;
+    width:50px;
+    height:50px;
+    left:0px;
+}
+
+
+#list{
+    position: absolute;
+    right: 140px;
+    bottom: 200px;    
+    height: 200px;
+    width:150px;
+}
+
+#GoWith, #back{
+    position: absolute;
+    bottom:0px;
+    left:25%;
+    height:50px;
+    width:200px;
+}
+
+#leftArrow{
+    float:left;
+    top:20px;
+    left:20px;
+    height:20px;
+    width:20px;
+}
+
+#form{
+    position:absolute;
+    left:80px;
+}
+
+.category {
+    border: black 1px solid;
+    border-radius:15px;
+    box-shadow: 5px 5px 4px grey, 7px 7px 4px white;
+    margin-top:30px;
+    margin-left:15px;
+    margin-right:30px;
+    float: left;
+    width: 33.33%;
+    height:100px;
+    padding: 5px;
+    z-index:10;
+  }
+
+  .select{
+      margin-top:50px;
+  }
+
+  #myList{
+      border: #fea085 1px solid;
+      border-radius:15px;
+      background-color: #fea085;
+      position:absolute;
+      bottom:0px;
+      right:0px;
+      height:70px;
+      width:100%;
+  }
+
+  #mycart{
+    font-size:25;
+    color:grey;
+    position:absolute;
+    left:37%;
+    bottom:-25px;
+    z-index:2;
+  }
+
+  #mycartArrow{
+    position:absolute;
+    left:45%;
+    transform:rotate(180deg);
+    bottom:30px;
+  }
+
+  #List{
+    border: #fea085 1px solid;
+    border-radius:15px;
+    background-color: #fea085;
+    position:absolute;
+    bottom:-60px;
+    right:0px;
+    height:70px;
+    width:100%;
+  }
+
+  #cartArrow{
+      position:absolute;
+      left:45%;
+      transform:rotate(180deg);
+      bottom:-20px;
+  }
+
+
+#GoWith{
+    border-radius:15px;
+    position:absolute;
+    bottom:10px;
+    background-color:white;
+}
+  #cart{
+      font-size:25;
+      color:grey;
+      position:absolute;
+      left:37%;
+      bottom:-75px;
+      z-index:2;
+  }
+
+ #checkList{
+      position:fixed;
+      z-index:10;
+      right:0px;
+      bottom:0px;
+      width:100%;
+      height:590px;
+      border-top:3px solid black;
+      border-left:3px solid black;
+      background-color:#fea085;
+      display:none;
+      pointer-events: none;
+  }
+
+ #Od,#Td,#THd,#Fd,#FId,#Sd,#SEd,#Ed,#Nd,#TEd{
+     display:none;
+  }
+
+  #close{
+    z-index: 20;
+    position:absolute;
+    left:45%;
+    top:5px;
+    width:50px;
+    height:50px;
+  }
+
+  #Q1{
+    position:absolute;
+    z-index:5;
+    left:200px;
+    top:143px;
+}
+
+.mapButton{
+    box-shadow:inset 0px 1px 0px 0px #efdcfb;
+    background:linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
+    background-color:#dfbdfa;
+    border-radius:15px;
+    border: #c584f 32px solid;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:21px;
+    font-weight:bold;
+    padding:9px 41px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #9752cc;
+}
+.mapButton:hover {
+    background:linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+    background-color:#bc80ea;
+}
+.mapButton:active {
+    position:relative;
+    top:1px;
+}
+.Location{
+    text-align: center;
+}
+
+#recommendation{
+    color:white;
+    background-image:url("img/recommend.svg");
+    background-repeat:no-repeat;
+    }
+#recommap{
+    text-decoration: none;
+    color:white;
+    font-size:30;
+    position:absolute;
+    right:35px;
+    top:120px;
+}
+
+#recomShop{
+    font-size:19;
+}
+
+
+
+#op1{
+    color:white;
+    background-image:url("img/optional.svg");
+    background-repeat:no-repeat;
+}
+
+#op1Shop{
+    font-size:19;
+}
+
+
+
+#op1map{
+    text-decoration: none;
+    color:white;
+    font-size:30;
+    position:absolute;
+    right:35px;
+    top:270px;
+}
+
+#op2{
+    color:white;
+    background-image:url("img/optional.svg");
+    background-repeat:no-repeat;
+}
+
+#op2Shop{
+    font-size:19;
+}
+
+
+#op2map{
+    text-decoration: none;
+    color:white;
+    font-size:30;
+    position:absolute;
+    right:35px;
+    top:365px;
+}
+
+
+.walk{
+    height:40px;
+    width:40px;
+}
+
+.go{
+    height:50px;
+    width:50px;
+    position:absolute;
+    right:30px;
+    top:150px;
+}
+
+#clear{
+    position:absolute;
+    right:50px;
+    top:35px;
+    background-color:white;
+    border-radius:15px;
+}
+
+.go1{
+    height:50px;
+    width:50px;
+    position:absolute;
+    right:30px;
+    top:365px;
+}
+
+.go2{
+    height:50px;
+    width:50px;
+    position:absolute;
+    right:30px;
+    top:490px;
+}
+
+.option{
+    text-align: center;
+        border: 2px solid black;
+}
+
+
+.others{
+        text-align: center;
+    }
+    .option{
+        text-align:left;
+        border: 5px double rgba(63,164,111,0.66);
+    }
+
+
+.category{
+    opacity: 0.6;
+}
+
+#meat{
+    position:absolute;
+    top:140px;
+    left:70px;
+    font-weight: 900;
+    z-index:5;
+}
+#dairy{
+    position:absolute;
+    top:140px;
+    right: 90px;
+    font-weight: 900;
+    z-index:5;
+}
+
+#vegetable{
+    position:absolute;
+    top:280px;
+    left: 50px;
+    font-weight: 900;
+    z-index:5;
+}
+
+#fruit{
+    position:absolute;
+    top:280px;
+    right: 90px;
+    font-weight: 900;
+    z-index:5;
+}
+
+#snack{
+    position:absolute;
+    top:420px;
+    left:63px;
+    font-weight: 900;
+    z-index:5;
+}
+
+#drink{
+    position:absolute;
+    top:420px;
+    right:90px;
+    font-weight: 900;
+    z-index:5;
+}
+
+#pet{
+    position:absolute;
+    top:570px;
+    left:75px;
+    font-weight: 900;
+    z-index:5;
+}
+
+#tool{
+    position:absolute;
+    top:570px;
+    right:95px;
+    font-weight: 900;
+    z-index:5;
+}
+
+#recomalt, #op1alt, #op2alt{
+    opacity: 0;
+}
+
+#recomInfo{
+    position:absolute;
+    top:145px;
+    right:100px;
+    font-size:14;
+    opacity:0.6;
+}
+
+#op1Info{
+    position:absolute;
+    top:295px;
+    right:100px;
+    font-size:14;
+    opacity:0.6;
+}
+
+#op2Info{
+    position:absolute;
+    top:385px;
+    right:100px;
+    font-size:14;
+    opacity:0.6;
+}
+
+#clo{
+    position:absolute;
+    width:30px;
+    height:25px;
+    top:232px;;
+    left:10px;
+  
+  }
+  
+  #che{
+    position:absolute;
+    top:327px;
+    left:10px;
+    width:25px;
+    height:25px;
+  }

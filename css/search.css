@@ -1,0 +1,61 @@
+
+
+#add{
+  z-index: 5;
+  position:absolute;
+  top:225px;
+  left:100px;
+  width:15px;
+  height:15px;
+}
+
+#minus{
+  z-index:5;
+  position:absolute;
+  top:225px;
+  left:25px;
+  width:15px;
+  height:15px;
+}
+
+#quantity{
+  margin:0px;
+  font-size:20;
+z-index:5;
+position:absolute;
+top:225px;
+left:72px;
+}
+
+#addToCart{
+  z-index:5;
+  position:absolute;
+  top:200px;
+  left:130px;
+  width:50px;
+  height:50px;
+  display:block;
+}
+
+#Added{
+  z-index:6;
+  position:absolute;
+  top:200px;
+  left:130px;
+  width:35px;
+  height:35px;
+  display:none;
+}
+
+.fill{
+    width:30px;
+    height:30px;
+    z-index:5;
+}
+
+#des{
+  position:absolute;
+  top:140px;
+  left:51px;
+}
+

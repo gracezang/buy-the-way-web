@@ -1,0 +1,67 @@
+<head>
+    <title>Buy the Way | Browse</title>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Zilong Zhang"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/IncDec.css"> 
+    <script src="js/interaction.js"></script>
+</head>
+<body>
+    <div>
+        <a href="index.html"><img id="leftArrow" src="img/leftArrow.jpg"></a>
+        <p>&nbsp;&nbsp;Add Items</p>
+    </div>
+
+    <div id="form">
+        <form name="newForm" method="get" onSubmit="toSubmit(this)">
+            <input type="text" name="q" id="SearchBox" />
+            <input type="submit" name="search" value="Search">
+        </form>
+    </div>
+
+    <p id="meat">Meat</p>
+    <p id="dairy">Dairy</p>
+    <p id="vegetable">Vegetable</p>
+    <p id="fruit">Fruit</p>
+    <p id="snack">Snack</p>
+    <p id="drink">Drink</p>
+    <p id="pet">Pet</p>
+    <p id="tool">Tool</p>
+
+    <div class="select">
+           <a href="meat.html"><img class="category" src="img/meat.jpg"></a>
+           <a href="dairy.html"><img class="category" src="img/dairy.jpg"></a>
+           <a href="vegetable.html"><img class="category" src="img/vegetable.jpg"></a>
+           <a href="fruit.html"><img class="category" src="img/fruit.jpg"></a> 
+           <a href="snack.html"><img class="category" src="img/snack.jpg"></a>
+           <a href="drink.html"><img class="category" src="img/drink.jpg"></a> 
+           <a href="pet.html"><img class="category" src="img/pet.jpg"></a> 
+           <a href="tool.html"><img class="category" src="img/tool.jpg"></a> 
+
+    </div>
+    <div id="click">
+    <div id="List"></div>
+    <p id="cart">My Cart</p>
+    <img id="cartArrow" src="img/svg/downarrow.svg">
+</div>
+    <div id="checkList">
+        <img id="close" src="img/svg/downarrow.svg">
+        <h1>&nbsp;&nbsp;My Cart</h1>
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete</h3>
+        <ul>
+            <li id="Od"><p id="1"></p><img id="plus1" src="img/svg/addB.svg"><img id="minus1" src="img/svg/minusB.svg"><img id="delete1" src="img/delete.jpg"></li>
+            <li id="Td"><p id="2"></p><img id="plus2" src="img/svg/addO.svg"><img id="minus2" src="img/svg/minusO.svg"><img id="delete2" src="img/delete.jpg"></li>
+            <li id="THd"><p id="3"></p><img id="plus3" src="img/svg/addB.svg"><img id="minus3" src="img/svg/minusB.svg"><img id="delete3" src="img/delete.jpg"></li>
+            <li id="Fd"><p id="4"></p><img id="plus4" src="img/svg/addO.svg"><img id="minus4" src="img/svg/minusO.svg"><img id="delete4" src="img/delete.jpg"></li>
+            <li id="FId"><p id="5"></p><img id="plus5" src="img/svg/addB.svg"><img id="minus5" src="img/svg/minusB.svg"><img id="delete5" src="img/delete.jpg"></li>
+            <li id="Sd"><p id="6"></p><img id="plus6" src="img/svg/addO.svg"><img id="minus6" src="img/svg/minusO.svg"><img id="delete6" src="img/delete.jpg"></li>
+            <li id="SEd"><p id="7"></p><img id="plus7" src="img/svg/addB.svg"><img id="minus7" src="img/svg/minusB.svg"><img id="delete7" src="img/delete.jpg"></li>
+            <li id="Ed"><p id="8"></p><img id="plus8" src="img/svg/addO.svg"><img id="minus8" src="img/svg/minusO.svg"><img id="delete8" src="img/delete.jpg"></li>
+            <li id="Nd"><p id="9"></p><img id="plus9" src="img/svg/addB.svg"><img id="minus9" src="img/svg/minusB.svg"><img id="delete9" src="img/delete.jpg"></li>
+            <li id="TEd"><p id="10"></p><img id="plus10" src="img/svg/addO.svg"><img id="minus10" src="img/svg/minusO.svg"><img id="delete10" src="img/delete.jpg"></li>
+        </ul>
+        <button id="GoWith" type="button" onclick="enterOption()">Go With My List</button>
+    </div>
+
+</body>

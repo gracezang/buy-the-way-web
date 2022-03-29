@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <image width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFJSURBVGhD7ZohTgRBEEVHIBEIBAK5ggMgEAgkAolYiUQi8RyAI3AABAdAIJBIxEoOgEAgEBDgv2Qq6ZBaYBDkd1IveZmkM6LezKRX9A5FMZl1eS7v5EJeyj3ZFbvyUX4knskuWJG8hSwiPJBdsCH5nLIIvJW27EsCgu9inqUlh/JVMvgaCyPLYp6kHRHBgOxSX8lirqUVP0UEbQz370gbfhsRRIzV9jslgu04WB2vFkyJ4N57yduwYmpE3HvEggt/jThhwYWKcKEiXKgIFyrChYpwoSJcqAgXKsKFinChIlyoCBcqwgnOHLqP2JYM9i4ZdBnWEXAqGQ4ZNIuxj4AbGSFZTBcRnDm8SD6rLKaLCOA0lSHfxmsrcbFuHQHsUu3w8fRb7SMgO/59kBdyLu1OizI2JYPzG3Ilj+WW7I6Z5A8s7YFj8f8MwyfWlxJY18DlkgAAAABJRU5ErkJggg==" id="img_1" />
+  </defs>
+  <use xlink:href="#img_1" fill="#FFFFFF" stroke="none" transform="scale(0.48 0.48)" />
+</svg>
